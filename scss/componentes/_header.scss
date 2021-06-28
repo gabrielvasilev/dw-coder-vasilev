@@ -1,0 +1,140 @@
+/* HEADER */
+
+header{
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    
+    height: 500px;
+    padding-bottom: 200px;
+    color: map-get($coloresSitio, blanco);
+
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;*/
+
+    figure{
+        width: 20%;
+        text-align: center;
+        padding-top: 3%;
+    }
+
+    h1,p,nav{
+        text-align: center;
+    }
+
+    p{
+        width: 290px;
+        margin: 0 auto;
+        letter-spacing: 2px;
+    }
+
+    img{
+        width: 150px;
+    }
+
+    nav{
+        margin-top: 10px;
+        /*
+    width: 40%;*/
+    height: 200px;
+    padding-top: 4%;
+    color: map-get($coloresSitio, blanco);
+        ul{
+            li{
+                list-style-type: none;
+                text-align: center;
+                display: inline-block;
+
+                a{
+                    font-size: 16px;
+                    a:hover{
+                        color: map-get($coloresSitio, blanco);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MIXIN */
+@mixin boton ($color){
+
+    border-radius: 50px;
+    border: 0;
+
+    text-decoration: none;
+    color: map-get($coloresSitio, blanco);
+    text-transform: uppercase;
+    padding: 5px 15px;
+    background-color: $color;
+
+    @if $color == map-get($coloresSitio, blanco){
+        letter-spacing: 2px;
+    }else{
+        letter-spacing: 0;
+    }
+}
+
+
+.enlaceReservar{
+    @include boton(map-get($coloresSitio, destacado));
+}
+
+
+header nav ul li.nav-item{
+    /*
+    width: 100px;*/
+    display: inline-block;
+}
+
+.navbar-light, .bg-light, .navbar-nav, #navbarSupportedContent, .collapse, .navbar-collapse{
+    background-color: transparent !important;
+}
+
+.navbar-toggler-icon{
+    border-radius: 10%;
+    padding: 1%;
+}
+
+header nav ul li a.nav-link{
+    background-color: black;
+    color: map-get($coloresSitio, blanco);
+    padding: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border:2px solid map-get($coloresSitio, negro);
+    transition: background-color 1s;
+}
+
+header nav ul li a.navbar-dark:hover{
+    background-color: map-get($coloresSitio, blanco);
+    color: map-get($coloresSitio, negro);
+}
+
+.abreSubmenu{
+    position: relative;
+}
+
+.platos{
+    /*
+    width: 100%;*/
+    text-align: center;
+}
+
+.platos p{
+    margin-bottom: 20px;
+}
+
+/* SUBMENU */
+.subMenu{
+    display: none;
+}
+
+li:hover > ul{
+    display: block;
+    position: absolute;
+    top: 30px;
+}

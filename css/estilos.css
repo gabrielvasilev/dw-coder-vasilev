@@ -1,0 +1,388 @@
+/* ESTILOS GENERALES*/
+html {
+  scroll-behavior: smooth; }
+
+/* APLICANDO LISTAS */
+/* TITULOS */
+h1, h2 {
+  font-family: 'Parisienne', cursive;
+  text-align: center; }
+
+h3, h4, p, a {
+  font-family: 'Roboto', sans-serif; }
+
+#seccionFondoDos h2 {
+  color: white;
+  padding-top: 4%; }
+
+p {
+  font-size: 20px; }
+
+h1 {
+  font-size: 70px; }
+
+h2 {
+  font-size: 45px;
+  margin: 15px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 13px; }
+
+h3 a {
+  text-decoration: none;
+  color: black; }
+
+/* HEADER */
+header {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  height: 500px;
+  padding-bottom: 200px;
+  color: white;
+  /*
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;*/ }
+  header figure {
+    width: 20%;
+    text-align: center;
+    padding-top: 3%; }
+  header h1, header p, header nav {
+    text-align: center; }
+  header p {
+    width: 290px;
+    margin: 0 auto;
+    letter-spacing: 2px; }
+  header img {
+    width: 150px; }
+  header nav {
+    margin-top: 10px;
+    /*
+    width: 40%;*/
+    height: 200px;
+    padding-top: 4%;
+    color: white; }
+    header nav ul li {
+      list-style-type: none;
+      text-align: center;
+      display: inline-block; }
+      header nav ul li a {
+        font-size: 16px; }
+        header nav ul li a a:hover {
+          color: white; }
+
+/* MIXIN */
+.enlaceReservar {
+  border-radius: 50px;
+  border: 0;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  background-color: #e6ba0b; }
+  .enlaceReservar else {
+    letter-spacing: 0; }
+
+header nav ul li.nav-item {
+  /*
+    width: 100px;*/
+  display: inline-block; }
+
+.navbar-light, .bg-light, .navbar-nav, #navbarSupportedContent, .collapse, .navbar-collapse {
+  background-color: transparent !important; }
+
+.navbar-toggler-icon {
+  border-radius: 10%;
+  padding: 1%; }
+
+header nav ul li a.nav-link {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid black;
+  transition: background-color 1s; }
+
+header nav ul li a.navbar-dark:hover {
+  background-color: white;
+  color: black; }
+
+.abreSubmenu {
+  position: relative; }
+
+.platos {
+  /*
+    width: 100%;*/
+  text-align: center; }
+
+.platos p {
+  margin-bottom: 20px; }
+
+/* SUBMENU */
+.subMenu {
+  display: none; }
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+  top: 30px; }
+
+/* SECCIONES FOTO FONDO */
+#menu {
+  display: flex;
+  flex-wrap: wrap; }
+
+#menu {
+  background-image: url("../img/comida.jpg");
+  background-size: contain;
+  padding: 3% 0 4% 0;
+  justify-content: center; }
+
+/*Aplicando VARIABLE*/
+#menu h2 {
+  color: white;
+  width: 100%; }
+
+#menu article {
+  background-color: white;
+  width: 16%;
+  padding: 1%;
+  margin: 0 1%;
+  min-height: 270px;
+  text-align: center;
+  box-shadow: 0px 0px 30px -2px black; }
+
+#menu article h3 {
+  padding: 1% 0 1% 0; }
+
+/*aplico operacion*/
+#menu article p {
+  font-size: 8px;
+  padding: 1%;
+  margin: 0; }
+
+#menu article h4 {
+  width: 25%;
+  background-color: #e6ba0b;
+  padding: 2%;
+  color: white;
+  margin: 0 auto; }
+
+#menu article figure img {
+  width: 100%;
+  object-fit: cover; }
+
+.menuTexto {
+  color: #666; }
+
+#seccionFondoDos {
+  height: 150px;
+  background-image: url("../img/fondo_1.jpeg");
+  background-size: cover; }
+
+/* PROPUESTA */
+#propuesta {
+  position: relative;
+  height: 250px; }
+
+.propuestaInfo {
+  width: 66%;
+  background-color: white;
+  position: absolute;
+  top: -180px;
+  left: 17%;
+  padding: 15px;
+  display: flex;
+  flex-wrap: nowrap; }
+
+.propuestaInfo div:last-of-type {
+  margin-left: 15px; }
+
+.propuestaInfo h2 {
+  border-bottom: #e6ba0b solid 3px; }
+
+/* CLIENTES */
+#clientes {
+  padding: 0 10% 3% 10%;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: center;
+  grid-gap: 20px;
+  text-align: center; }
+
+#clientes article {
+  padding: 5%;
+  box-shadow: 0px 0px 10px -2px rgba(181, 181, 181, 0.57);
+  transition: box-shadow 1s; }
+
+#clientes article:hover {
+  padding: 5%;
+  box-shadow: 0px 0px 10px -2px rgba(230, 186, 11, 0.57); }
+
+#clientes article figure img {
+  width: 30%;
+  border-radius: 50%; }
+
+#clientes h2 {
+  grid-column: 1/4;
+  grid-row: 1/2; }
+
+#clientes article:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 2/3; }
+
+#clientes article:nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 3/4; }
+
+#clientes article:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  padding-top: 20%; }
+
+#clientes article:nth-child(4) {
+  grid-column: 3/4;
+  grid-row: 2/3; }
+
+#clientes article:nth-child(5) {
+  grid-column: 3/4;
+  grid-row: 3/4; }
+
+#clientes figure img {
+  width: 100%; }
+
+#clientes p {
+  font-size: 14px;
+  margin: 5% 2%; }
+
+#clientes span {
+  color: #e6ba0b; }
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  #clientes {
+    /*display: flex;
+    flex-wrap: wrap; */ }
+  #clientes h2 {
+    /*width: 100%;*/ }
+  #clientes article {
+    /*width: 75%;*/ }
+  #clientes article:nth-child(3) {
+    padding-top: 5%; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #clientes {
+    /*  display: flex;
+        flex-wrap: wrap; */ }
+  /* #clientes h2{
+        width: 100%;*/ }
+
+/*#clientes article{
+        width: 35%;
+    }
+
+    #clientes article:nth-child(3){
+        padding-top: 5%;
+        display: none;
+    }
+    
+}
+
+/* LOCALES */
+#locales h2 {
+  width: 100%; }
+
+#locales {
+  padding: 3% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+#locales article {
+  background-color: white;
+  width: 20%;
+  padding: 1%;
+  margin: 1%;
+  text-align: center;
+  border: 1px solid rgba(181, 181, 181, 0.3);
+  /*box-shadow: 0px 0px 10px -2px rgba(181,181,181,0.57);
+    */
+  transition: box-shadow 1s; }
+
+#locales article:hover {
+  box-shadow: 0px 0px 10px -2px rgba(230, 186, 11, 0.57); }
+
+#locales article figure img {
+  width: 100%;
+  object-fit: cover; }
+
+#locales article p {
+  font-size: 14px; }
+
+#locales article h3 {
+  padding: 3%; }
+
+/* RESERVAS */
+#reservas {
+  height: 300px;
+  background-image: url("../img/pizza.jpg");
+  background-size: cover;
+  color: white;
+  padding-top: 2%; }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin: 20px; }
+
+footer nav {
+  margin: 10px; }
+
+footer nav ul li {
+  display: inline-block; }
+
+footer nav ul li a img {
+  width: 32px; }
+
+/* FOOTER */
+footer nav {
+  width: 50px;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  animation-name: apareceWhatsApp;
+  animation-duration: 2s; }
+
+footer nav img {
+  width: 50px;
+  transition: transform ease 1s; }
+
+footer nav img:hover {
+  transform: scale(1.5); }
+
+@keyframes apareceWhatsApp {
+  0% {
+    opacity: 0;
+    transform: rotate(-360deg); }
+  100% {
+    opacity: 100%;
+    transform: rotate(0); } }
+
+footer p {
+  font-size: 14px;
+  letter-spacing: 2px; }
+
+footer ul {
+  list-style-type: none;
+  margin-top: 1%; }
+
+footer ul li {
+  display: inline-block; }
+
+footer ul li img {
+  width: 40px; }

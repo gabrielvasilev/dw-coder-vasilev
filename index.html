@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant | Inicio</title>
+
+    <!-- DESCRIPCION DEL SITIO -->
+    <meta name="description" content="¡Bienvenidos a nuestro Restaurant! En este sitio podras encontrar todos nuestros platos, hacer tu reserva online y compartir una velada con quien desees. ">
+    <!-- PALABRAS CLAVE DEL SITIO -->
+    <meta name="keywords" content="restaurant, new york, usa gourmet, parrilla, menu vegano">
+
+      <!-- FAV ICON-->
+      <link rel="icon" type="image/png" href="img/logo.png">
+    
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Enlace con CSS-->
+    <link href="css/estilos.css" type="text/css" rel="stylesheet">
+    <!-- Fuente Externa -->
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<main class="container-fluid">
+    
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light col-8">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo del Sitio" title="Logo del Restaurant"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 float-right">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#propuestaAncla">Propuesta</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#menu" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menú
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#menu">Platos</a></li>
+                      <li><a class="dropdown-item" href="#menu">Postres</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#clientes">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#locales">Locales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#reservas">Reservas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- 
+        NAV SIN BOOTSTRAP - LUEGO LO BORRO
+        <figure>
+            <img src="img/logo.png" alt="Logo del Sitio">
+        </figure>
+       
+        <nav>
+            <ul>
+                <li>
+                    <a href="#propuesta">Propuesta</a>
+                </li>
+                <li class="abreSubmenu">
+                    <a href="#menu">Menú</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#platos">Platos</a>
+                        </li>
+                        <li>
+                            <a href="#postres">Postres</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#clientes">Clientes</a>
+                </li>
+                <li>
+                    <a href="#locales">Locales</a>
+                </li>
+                <li>
+                    <a href="#reservas" class="reservas">Reservas</a>
+                </li>
+            </ul>
+        </nav>
+         -->
+        <div class="container-fluid">
+            <div class="platos row justify-content-center">
+                <h1 id="propuestaAncla" class="col-12">Platos con amor</h1>
+                <p class="col-12">Es tu momento para probar nuestras delicias, con un buen vino.</p>
+                <a class="enlaceReservar col-2 text-center" href="#reservas" >QUIERO</a>
+            
+            </div>
+        </div>
+    </header>
+    <!-- BIENVENIDA -->
+    <section id="propuesta row">
+        <article class="propuestaInfo col-12"><!-- CamelCase aplicado aqui -->
+            <figure>
+                <img src="img/propuesta.jpg" alt="Imagen de nuestra propuesta gastronomica">
+            </figure>
+            <div>
+                <h2>Nuestra Propuesta</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic illo accusantium ratione! Atque laborum ea unde quisquam id. Deleniti quia voluptatibus autem distinctio adipisci mollitia necessitatibus deserunt quisquam odit debitis!</p>
+            </div>
+            
+        </article>
+    </section>
+    <!-- MENU -->
+    <section id="menu" class="container-fluid">
+        <div class="row justify-content-center">
+            <h2 class="col-12 text-center">Menú</h2>
+            <article class="col-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src="img/plato_menu_1.jpeg" alt="Plato de Pizza con masa horneada">
+                </figure>
+                <h3> <a data-bs-toggle="collapse" href="#pasta" role="button" aria-expanded="false" aria-controls="collapseExample">Pizza Margarita</a> </h3>
+                <p class="menuTexto collapse" id="pasta">Pizza con masa horneada, y muzzarella crujiente.</p>
+                <h4>$ 199</h4>
+            </article>
+            <article class="col-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src="img/plato_menu_1.jpeg" alt="">
+                </figure>
+                <h3> <a data-bs-toggle="collapse" href="#pizza" role="button" aria-expanded="false" aria-controls="collapseExample">Pizza Margarita</a> </h3>
+                <p class="menuTexto collapse" id="pizza">Pizza con masa horneada, y muzzarella crujiente.</p>
+                <h4>$ 372</h4>
+            </article>
+            <article class="col-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src="img/plato_menu_1.jpeg" alt="">
+                </figure>
+                <h3> <a data-bs-toggle="collapse" href="#sopa" role="button" aria-expanded="false" aria-controls="collapseExample">Pizza Margarita</a> </h3>
+                <p class="menuTexto collapse" id="sopa">Pizza con masa horneada, y muzzarella crujiente.</p>
+                <h4>$ 353</h4>
+            </article>
+            <article class="col-12 col-sm-6 col-md-4">
+                <figure>
+                    <img src="img/plato_menu_1.jpeg" alt="">
+                </figure>
+                <h3> <a data-bs-toggle="collapse" href="#asado" role="button" aria-expanded="false" aria-controls="collapseExample">Pizza Margarita</a> </h3>
+                <p class="menuTexto collapse" id="asado">Pizza con masa horneada, y muzzarella crujiente.</p>
+                <h4>$ 219</h4>
+            </article>
+        </div>
+    </section>
+
+    <!-- CLIENTES -->
+    <section id="clientes">
+        <h2>Clientes</h2>
+        <article>
+            <figure>
+                <img src="img/cliente_5.jpg" alt="Cliente Lucas Amoroso">
+            </figure>
+            <h3>Lucas Amoroso | 23 años</h3>
+            <p>¡La atención es muy buena! Fui con amigos y recomiendo</p>
+            <p><span>★★★☆☆</span></p>
+        </article>
+        <article >
+            <figure>
+                <img src="img/cliente_1.jpg" alt="Cliente Jennifer Aniston">
+            </figure>
+            <h3>Jennifer Aniston | 40 años</h3>
+            <p>Si te provocan unas picadas gourmet este es el lugar ideal! Tienen una puesta muy diferente a lo que normalmente consigues en Montevideo. El perfecto plan en bruta es ir a tapear, yo fui con mi pareja, y comimos 4 picadas entre los dos, da perfecto para compartir cada una entre dos, así pueden probar más opciones.</p>
+            <p><span>★★★★★</span></p>
+        </article>
+        <article>
+            <figure>
+                <img src="img/cliente_2.jpeg" alt="Cliente Patricia Patero">
+            </figure>
+            <h3>Patricia Patero | 21 años</h3>
+            <p>¡Excelentes platos y gran variedad en el menú! Super recomiendo</p>
+            <p><span>★★★★☆</span></p>
+        </article>
+        <article>
+            <figure>
+                <img src="img/cliente_3.jpg" alt="Cliente Luciano Padel">
+            </figure>
+            <h3>Luciano Padel | 28 años</h3>
+            <p>¡Horrible el servicio! No me gustó para nada. No recomiendo</p>
+            <p><span>★☆☆☆☆</span></p>
+        </article>
+        <article>
+            <figure>
+                <img src="img/cliente_4.png" alt="Cliente Martin Lucas">
+            </figure>
+            <h3>Martin Lucas | 40 años</h3>
+            <p>¡Me gustó el ambiente pero los precios son un poco elevados.</p>
+            <p><span>★★★☆☆</span></p>
+        </article>
+    </section>
+    <!-- Sección para "cortar" con imagen de fondo en parallax -->
+    <section id="seccionFondoDos"> <!-- CamelCase aplicado aqui -->
+        
+    </section>
+    <!-- LOCALES -->
+    <section id="locales">
+            <div class="row justify-content-center">
+                <h2 class="text-center col-12">Locales</h2>
+                
+
+                <article class="col-lg-4 col-12">
+
+                    <figure>
+
+                        <img src="img/front.jpg" alt="Foto de la tienda en Mahattan">
+
+                    </figure>
+
+                    <h3>Manhattan</h3>
+
+                    <p>43 Street & 5th Ave</p>
+
+                    <p>Lunes a Sábado</p>
+
+                    <p>10 a 21 hs</p>
+
+                </article>
+
+                <article class="col-lg-4 col-12">
+
+                    <figure>
+
+                        <img src="img/front.jpg" alt="Foto de la tienda en Soho">
+
+                    </figure>
+
+                    <h3>Manhattan</h3>
+
+                    <p>43 Street & 5th Ave</p>
+
+                    <p>Lunes a Sábado</p>
+
+                    <p>10 a 21 hs</p>
+
+                </article>
+
+                <article class="col-lg-4 col-12">
+
+                    <figure>
+
+                        <img src="img/front.jpg" alt="Foto de la tienda en Brooklyn">
+
+                    </figure>
+
+                    <h3>Manhattan</h3>
+
+                    <p>43 Street & 5th Ave</p>
+
+                    <p>Lunes a Sábado</p>
+
+                    <p>10 a 21 hs</p>
+
+                </article>
+
+            </div>
+
+    </section>
+    <!-- RESERVAS -->
+    <section id="reservas" class="row">
+        <!-- Aca va un formulario que aún no vimos-->
+        <h2 class="col-12">¡Reservá tu mesa!</h2>
+    </section>
+    <footer class="row">
+        <nav>
+            <a href="#">
+                <img src="img/wpp.png" alt="Logo WhatsApp">
+            </a>
+        </nav>
+        <!-- icono flecha para volver arriba aca -->
+        <p class="col-12 text-center">Todos los derechos reservados 2021</p>
+            <ul class="col-12">
+                <li>
+                    <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                </li>
+            </ul>
+    </footer>
+</main>
+    <!-- JS DE BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

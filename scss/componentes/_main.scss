@@ -1,6 +1,7 @@
 /* SECCIONES FOTO FONDO */
 
 
+
 %Flexbox{
     display: flex;
     flex-wrap: wrap;
@@ -9,11 +10,11 @@
 #menu{
     background-image: url("../img/comida.jpg");
     background-size: contain;
+    background-attachment: fixed;
 
-    padding: 3% 0 4% 0;
 
-    @extend %Flexbox;   
-    justify-content: center; 
+   /* @extend %Flexbox;   */
+    /*justify-content: center; */
 }
 
 /*Aplicando VARIABLE*/
@@ -23,15 +24,12 @@ $colorBlanco: map-get($coloresSitio, blanco);
 
 #menu h2{
     color: map-get($coloresSitio, blanco);
-    width: 100%;
 }
 
 #menu article{
     background-color: map-get($coloresSitio, blanco);
-    width: 16%;
     padding: 1%;
     margin: 0 1%;
-    min-height: 270px;
 
     text-align: center;
     box-shadow: 0px 0px 30px -2px rgba(0, 0, 0,1);
@@ -51,16 +49,13 @@ $tamanoFuente: 16px;
 }
 
 #menu article h4{
-    width: 25%;
     background-color: map-get($coloresSitio, destacado);
     padding: 2%;
     color: map-get($coloresSitio, blanco);
-    margin:0 auto;
 }
 
 
 #menu article figure img{
-    width: 100%;
     object-fit: cover;
 }
 
@@ -72,25 +67,19 @@ $tamanoFuente: 16px;
     height: 150px;
     background-image: url("../img/fondo_1.jpeg");   
     background-size: cover;
+    background-attachment: fixed;
 }
 /* PROPUESTA */
 
 #propuesta{
-    position: relative;
     height: 250px;
 }
 
 .propuestaInfo {
-    width: 66%;
     background-color: map-get($coloresSitio, blanco);
-    position: absolute;
-    top: -180px;
-    left:17%;
+    
 
-    padding: 15px;
-
-    display: flex;
-    flex-wrap: nowrap;
+   
 }
 
 .propuestaInfo div:last-of-type{
@@ -106,26 +95,23 @@ $tamanoFuente: 16px;
 
 #clientes{
 
-    padding: 0 10% 3% 10%;
-    display: grid;
+    /*display: grid;
 
     grid-template-columns: 25% 25% 25%;
     justify-content: center;
-    grid-gap: 20px;
+    grid-gap: 20px;*/
     text-align: center;
 }
 
 #clientes article{
-    padding: 5%;
     box-shadow: 0px 0px 10px -2px rgba(181,181,181,0.57);
     transition: box-shadow 1s;
 }
 
 #clientes article:hover{
-    padding: 5%;
     box-shadow: 0px 0px 10px -2px rgba(230, 186, 11,0.57);
 }
-
+/*
 #clientes article figure img{
     width: 30%;
     border-radius: 50%;
@@ -167,57 +153,16 @@ $tamanoFuente: 16px;
 #clientes figure img{
     width: 100%;
 }
-
+*/
 
 #clientes p{
     font-size: 14px;
-    margin: 5% 2%;
 }
 
 #clientes span{
     color: map-get($coloresSitio, destacado);
 }
 
-@media screen and (min-width:321px) and (max-width:768px) {
-
-    #clientes{
-        /*display: flex;
-    flex-wrap: wrap; */}
-    
-    #clientes h2{
-        /*width: 100%;*/
-    }
-
-    #clientes article{
-        /*width: 75%;*/
-    }
-
-    #clientes article:nth-child(3){
-        padding-top: 5%;
-    }
-    
-}
-
-@media screen and (min-width:768px) and (max-width:1024px) {
-
-    #clientes{
-      /*  display: flex;
-        flex-wrap: wrap; */  }
-    
-   /* #clientes h2{
-        width: 100%;*/
-    }
-
-    /*#clientes article{
-        width: 35%;*/
-    }
-
-    #clientes article:nth-child(3){
-        padding-top: 5%;
-        display: none;
-    }
-    
-}
 
 /* LOCALES */
 /*
@@ -271,6 +216,7 @@ box-shadow: 0px 0px 10px -2px rgba(230, 186, 11,0.57);
 #reservas{
     height: 300px;
     background-image: url("../img/pizza.jpg");
+    background-attachment: fixed;
     background-size: cover;
     color: map-get($coloresSitio, blanco);
 

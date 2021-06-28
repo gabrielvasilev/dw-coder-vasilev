@@ -12,9 +12,6 @@ footer nav{
     margin: 10px;
 }
 
-footer nav ul li{
-    display: inline-block;
-}
 
 footer nav ul li a img{
     width: 32px;
@@ -26,7 +23,6 @@ footer nav ul li a img{
 
 footer nav{
     width: 50px;
-    position: fixed;
     bottom: 3%;
     right: 3%;
     animation-name: apareceWhatsApp;
@@ -64,9 +60,6 @@ footer ul{
     margin-top: 1%;
 }
 
-footer ul li{
-    display: inline-block;
-}
 
 footer ul li img{
     width: 40px;

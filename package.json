@@ -270,5 +270,13 @@
     "yallist": "^4.0.0",
     "widest-line": "^3.1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielvasilev/dw-coder-vasilev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrielvasilev/dw-coder-vasilev/issues"
+  },
+  "homepage": "https://github.com/gabrielvasilev/dw-coder-vasilev#readme",
   "description": ""
 }

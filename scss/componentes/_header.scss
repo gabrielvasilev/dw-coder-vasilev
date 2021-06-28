@@ -4,7 +4,7 @@ header{
     background-image: url("../img/header.jpg");
     background-size: cover;
     
-    height: 500px;
+
     padding-bottom: 200px;
     color: map-get($coloresSitio, blanco);
 
@@ -45,7 +45,6 @@ header{
             li{
                 list-style-type: none;
                 text-align: center;
-                display: inline-block;
 
                 a{
                     font-size: 16px;
@@ -83,11 +82,7 @@ header{
 }
 
 
-header nav ul li.nav-item{
-    /*
-    width: 100px;*/
-    display: inline-block;
-}
+
 
 .navbar-light, .bg-light, .navbar-nav, #navbarSupportedContent, .collapse, .navbar-collapse{
     background-color: transparent !important;
@@ -122,6 +117,17 @@ header nav ul li a.navbar-dark:hover{
     /*
     width: 100%;*/
     text-align: center;
+    animation: aparecePlatos 4s;
+}
+
+@keyframes aparecePlatos{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
 }
 
 .platos p{

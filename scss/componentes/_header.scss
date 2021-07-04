@@ -1,5 +1,17 @@
 /* HEADER */
 
+.bg-dark{
+    background-color: black !important;
+}
+
+.navbar-brand img{
+    width: 20%;
+}
+
+.nav-link{
+    color: white !important;
+}
+
 header{
     background-image: url("../img/header.jpg");
     background-size: cover;
@@ -8,11 +20,6 @@ header{
     padding-bottom: 200px;
     color: map-get($coloresSitio, blanco);
 
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;*/
 
     figure{
         width: 20%;
@@ -36,8 +43,6 @@ header{
 
     nav{
         margin-top: 10px;
-        /*
-    width: 40%;*/
     height: 200px;
     padding-top: 4%;
     color: map-get($coloresSitio, blanco);
@@ -84,38 +89,7 @@ header{
 
 
 
-.navbar-light, .bg-light, .navbar-nav, #navbarSupportedContent, .collapse, .navbar-collapse{
-    background-color: transparent !important;
-}
-
-.navbar-toggler-icon{
-    border-radius: 10%;
-    padding: 1%;
-}
-
-header nav ul li a.nav-link{
-    background-color: black;
-    color: map-get($coloresSitio, blanco);
-    padding: 5px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    border:2px solid map-get($coloresSitio, negro);
-    transition: background-color 1s;
-}
-
-header nav ul li a.navbar-dark:hover{
-    background-color: map-get($coloresSitio, blanco);
-    color: map-get($coloresSitio, negro);
-}
-
-.abreSubmenu{
-    position: relative;
-}
-
 .platos{
-    /*
-    width: 100%;*/
     text-align: center;
     animation: aparecePlatos 4s;
 }
@@ -132,15 +106,4 @@ header nav ul li a.navbar-dark:hover{
 
 .platos p{
     margin-bottom: 20px;
-}
-
-/* SUBMENU */
-.subMenu{
-    display: none;
-}
-
-li:hover > ul{
-    display: block;
-    position: absolute;
-    top: 30px;
 }

@@ -43,7 +43,7 @@ $colorBlanco: map-get($coloresSitio, blanco);
 $tamanoFuente: 16px;
 
 #menu article p{
-    font-size: $tamanoFuente/2;
+    font-size: $tamanoFuente;
     padding: 1%;
     margin:0;
 }
@@ -172,6 +172,7 @@ form input, form textarea{
     border: grey;
     resize: none;
     transition: all 1s;
+    padding-left: 10px;
 }
 
 input:focus, textarea:focus{
@@ -181,6 +182,7 @@ input:focus, textarea:focus{
 
 form input::placeholder, form textarea::placeholder{
     color: black;
+    padding-left: 10px;
 }
 
 input[type="submit"]{
